@@ -4,7 +4,7 @@ repo_url: 'https://github.com/CyVerse-learning-materials/cyverse_mooc'
 
 site_name: 'CyVerse Self-guided Course'
 site_description: 'Introduction to CyVerse Self-guided Course'
-site_author: 'CyVerse USA & CyVerse Austria, Michele Cosi'
+site_author: 'CyVerse USA & CyVerse Austria'
 site_url: https://CyVerse-learning-materials.io/cyverse_mooc/
 
 edit_uri: edit/mkdocs-usa/docs
@@ -86,12 +86,12 @@ extra:
       link: https://harbor.cyverse.org/
     - icon: fontawesome/brands/youtube
       link: https://www.youtube.com/c/CyverseOrgProject
-
 # setting up versioning with mike
-extra:
   version:
-    provider: mike
-
+    method: mike
+    default: usa
+plugins:
+  - mike
 #  analytics:
 #    provider: google
 #    property: 
