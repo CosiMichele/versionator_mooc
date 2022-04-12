@@ -1,0 +1,891 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Introduction to CyVerse Self-guided Course">
+      
+      
+        <meta name="author" content="CyVerse USA & CyVerse Austria">
+      
+      
+        <link rel="canonical" href="https://CyVerse-learning-materials.io/cyverse_mooc/CyVerse-UK/step8/">
+      
+      <link rel="icon" href="../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.9">
+    
+    
+      
+        <title>Interactive Analyses - CyVerse Self-guided Course</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.120efc48.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.9647289d.min.css">
+        
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRegular:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Regular"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#interactive-analyses" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-component="outdated" hidden>
+        <aside class="md-banner md-banner--warning">
+          
+        </aside>
+      </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="CyVerse Self-guided Course" class="md-header__button md-logo" aria-label="CyVerse Self-guided Course" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m20 22-3.86-1.55c.7-1.53 1.2-3.11 1.51-4.72L20 22M7.86 20.45 4 22l2.35-6.27c.31 1.61.81 3.19 1.51 4.72M12 2s5 2 5 10c0 3.1-.75 5.75-1.67 7.83A2 2 0 0 1 13.5 21h-3a2 2 0 0 1-1.83-1.17C7.76 17.75 7 15.1 7 12c0-8 5-10 5-10m0 10c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            CyVerse Self-guided Course
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Interactive Analyses
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/CyVerse-learning-materials/cyverse_mooc" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    CyVerse-learning-materials/cyverse_mooc
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="CyVerse Self-guided Course" class="md-nav__button md-logo" aria-label="CyVerse Self-guided Course" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m20 22-3.86-1.55c.7-1.53 1.2-3.11 1.51-4.72L20 22M7.86 20.45 4 22l2.35-6.27c.31 1.61.81 3.19 1.51 4.72M12 2s5 2 5 10c0 3.1-.75 5.75-1.67 7.83A2 2 0 0 1 13.5 21h-3a2 2 0 0 1-1.83-1.17C7.76 17.75 7 15.1 7 12c0-8 5-10 5-10m0 10c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2Z"/></svg>
+
+    </a>
+    CyVerse Self-guided Course
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/CyVerse-learning-materials/cyverse_mooc" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    CyVerse-learning-materials/cyverse_mooc
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../step1/" class="md-nav__link">
+        Course Overview
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../step2/" class="md-nav__link">
+        CyVerse Background
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../step3/" class="md-nav__link">
+        Tour of Discovery Environment
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../step4/" class="md-nav__link">
+        Data Management I
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../step5/" class="md-nav__link">
+        Data Management II
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../step6/" class="md-nav__link">
+        Data Management III
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../step7/" class="md-nav__link">
+        Analysis with the Discovery Environment
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Interactive Analyses
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Interactive Analyses
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#input-data" class="md-nav__link">
+    Input Data
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-vice-access" class="md-nav__link">
+    Getting VICE Access
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#launching-a-vice-application" class="md-nav__link">
+    Launching a VICE application
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#completing-our-analysis-in-r" class="md-nav__link">
+    Completing our analysis in R
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#terminating-your-vice-session-and-saving-work-to-the-data-store" class="md-nav__link">
+    Terminating your VICE session and saving work to the Data Store
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#self-assessment-questions" class="md-nav__link">
+    Self Assessment Questions
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../final_step/" class="md-nav__link">
+        Conclusion and Advanced Applications
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#input-data" class="md-nav__link">
+    Input Data
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-vice-access" class="md-nav__link">
+    Getting VICE Access
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#launching-a-vice-application" class="md-nav__link">
+    Launching a VICE application
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#completing-our-analysis-in-r" class="md-nav__link">
+    Completing our analysis in R
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#terminating-your-vice-session-and-saving-work-to-the-data-store" class="md-nav__link">
+    Terminating your VICE session and saving work to the Data Store
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#self-assessment-questions" class="md-nav__link">
+    Self Assessment Questions
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+  <a href="https://github.com/CyVerse-learning-materials/cyverse_mooc/edit/mkdocs-usa/docs/step8.md" title="Edit this page" class="md-content__button md-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+
+<h1 id="interactive-analyses">Interactive Analyses<a class="headerlink" href="#interactive-analyses" title="Permanent link">&para;</a></h1>
+<details class="tip">
+<summary>Learning Objectives</summary>
+<ul>
+<li>
+<p>Request VICE access.</p>
+</li>
+<li>
+<p>Launch and access VICE application.</p>
+</li>
+<li>
+<p>Configure the VICE application and run an analysis.</p>
+</li>
+<li>
+<p>Save the outputs of a VICE application to your Data Store.</p>
+</li>
+</ul>
+</details>
+<p><strong>Description:</strong></p>
+<p>The Visual Interactive Computing Environment <a href="https://user.cyverse.org/services" target="_blank"><img alt="" src="../assets/de/logos/deviceIcon.png" width="30" /></a> <a href="https://user.cyverse.org/services" target="_blank">VICE</a> allows you to work with popular interactive data science applications such JupyterLab, RStudio, Linux shell and others. In this exercise we will cover a simple introductory use case that allows us to complete our goal of visualizing a phylogenetic tree.</p>
+<p><em>In this exercise we will:</em></p>
+<ol>
+<li>
+<p>Launch an RStudio session, loading the sequence alignments created earlier in the course.</p>
+</li>
+<li>
+<p>Install an R package and create a phylogenetic tree from the alignment, saving it to a file.</p>
+</li>
+<li>
+<p>Save our work to the Data Store and terminate the application.</p>
+</li>
+</ol>
+<details class="tip">
+<summary>Why use VICE</summary>
+<p>The Discovery Environment excels at running compute intensive analyses non-interactively. </p>
+<p>In other words, once you launch a job in the DE, you get an output, but to start a new analysis (for example to tweak parameters), you need to relaunch that job, and await new results. </p>
+<p>This style of computing allows you to run large jobs that require lots of resources. However, several analyses we'd like to do are interactive -- we need to visualize and manipulate parameters on the fly -- for example, creating a figure where you need to see and adjust the results of an upstream analysis. </p>
+<p>This kind of work is often done using tools like R and RStudio, or other programing tools such as Jupyter. Hence VICE!</p>
+</details>
+<div class="video-container">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PPFD7z4XOVc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<hr />
+<h2 id="input-data">Input Data<a class="headerlink" href="#input-data" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Location</th>
+<th>File</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>muscle_output/</code></td>
+<td>logs folder</td>
+<td><a href="https://datacommons.cyverse.org/browse/iplant/home/shared/cyverse_training/cyverse_mooc/tutorial_folder/results/muscle_output" target="_blank">View the example <code>muscle_output/</code></a></td>
+</tr>
+<tr>
+<td><code>clstalw.aln</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>fasta.aln</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>phylip_interleaved.aln</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>phylip_sequential.aln</code></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="getting-vice-access">Getting VICE Access<a class="headerlink" href="#getting-vice-access" title="Permanent link">&para;</a></h2>
+<p>To minimize inappropriate use, VICE is a restricted service, currently accessible from CyVerse US. You must request access to use.</p>
+<ol>
+<li>Visit the <a href="https://user.cyverse.org/services" target="_blank">User Portal</a> and <strong>Services</strong>; look for <a href="https://user.cyverse.org/services" target="_blank"><img alt="" src="../assets/de/logos/deviceIcon.png" width="30" /></a> <a href="https://user.cyverse.org/services" target="_blank">DE VICE</a> and select the <strong>REQUST ACCESS</strong> link.</li>
+</ol>
+<details class="tip">
+<summary>Ensure your request is approved</summary>
+<p>Ensure that your CyVerse account is associated with a valid email address from an organization ending with <code>.org</code>, an educational institution with <code>.edu</code>, or government <code>.gov</code>. </p>
+<p>We do not grant access to commercial email addresses, e.g., <code>@gmail.com</code> <code>@yahoo.com</code> <code>@msn.com</code> etc.</p>
+</details>
+<h2 id="launching-a-vice-application">Launching a VICE application<a class="headerlink" href="#launching-a-vice-application" title="Permanent link">&para;</a></h2>
+<details class="tip">
+<summary>Featured Apps</summary>
+<p><a href="https://de.cyverse.org/apps" target="_blank"><img alt="" src="../assets/de/logos/deviceIcon.png" width="60" /></a></p>
+<p>CyVerse maintains featured apps from the <a href="https://rocker-project/images" target="_blank">Rocker-Project</a>, <a href="https://jupyter-docker-stacks.readthedocs.io/en/latest/index.html" target="_blank">Project Jupyter</a>, and <a href="https://code.visualstudio.com/docs/remote/create-dev-container" target="_blank">Visual Studio Code</a></p>
+<table>
+<thead>
+<tr>
+<th>quick launch</th>
+<th>Base Images</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://de.cyverse.org/apps/de/3548f43a-bed1-11e9-af16-008cfa5ae621/launch" target="_blank"><img src="https://img.shields.io/badge/Verse-latest-blue?style=plastic&logo=rstudio"></a></td>
+<td><a href="https://rocker-project/images" target="_blank">Rocker-Project</a></td>
+</tr>
+<tr>
+<td><a href="https://de.cyverse.org/apps/de/cc77b788-bc45-11eb-9934-008cfa5ae621/launch" target="_blank"><img src="https://img.shields.io/badge/Datascience-latest-orange?style=plastic&logo=jupyter"></a></td>
+<td><a href="https://jupyter-docker-stacks.readthedocs.io/en/latest/index.html" target="_blank">Project Jupyter</a></td>
+</tr>
+<tr>
+<td><a href="https://de.cyverse.org/apps/de/091c830a-4be1-11ec-aad9-008cfa5ae621/launch" target="_blank"><img src="https://img.shields.io/badge/VS%20Code-latest-6C33AF?style=plastic&logo=visualstudiocode"></a></td>
+<td><a href="https://code.visualstudio.com/docs/remote/create-dev-container" target="_blank">Visual Studio Code</a></td>
+</tr>
+</tbody>
+</table>
+<p>These containers are built from community maintianed container stacks, with a few additonal packages for use in CyVerse DE.</p>
+</details>
+<ol>
+<li>
+<p>If necessary, log into the <a href="https://de.cyverse.org" target="_blank"><img alt="" src="../assets/de/logos/deIcon.svg" width="25" /></a> <a href="https://de.cyverse.org" target="_blank">Discovery Environment</a>.</p>
+</li>
+<li>
+<p>Click the <a href="https://de.cyverse.org/data/" target="_blank"><img alt="" src="../assets/de/menu_items/dataIcon.svg" width="25" /></a> <a href="https://de.cyverse.org/data" target="_blank">Data Icon</a> and navigate to your <code>results/</code> folder in the<code>tutorial_folder/</code>; click the (Add Folder button) and create a folder called <code>rocker_output/</code> inside your tutorial folder.</p>
+</li>
+<li>
+<p>Use this Quick Launch link <a href="https://de.cyverse.org/apps/de/48b6e7ae-8b64-11ec-92dc-008cfa5ae621/launch" target="_blank"><img src="https://img.shields.io/badge/Verse-latest-blue?style=plastic&logo=rstudio"></a> or click on <a href="https://de.cyverse.org/apps" target="_blank"><img alt="" src="../assets/de/menu_items/appsIcon.svg" width="20" /></a> <a href="https://de.cyverse.org/apps" target="_blank">Apps</a> to launch thev featured <strong>Rocker RStudio Latest</strong> App. You can also use the DE search bar to search for this application in the Apps category.</p>
+</li>
+<li>
+<p>Launch the application and adjust the following:</p>
+<p>Under "Analysis Info", for <strong>Output Folder</strong> click <strong>Browse</strong> and navigate to and select the <code>rocker_output</code> created above. click <strong>Next</strong>;</p>
+<p>For "Parameters", under "Input Folder" click <strong>Browse</strong> and navigate to the <code>tutorial_folder</code>, then the <strong>results</strong> folder and select the <code>muscle_output</code> folder where your Muscle analysis results should be located; click <strong>Select Current Folder</strong>; then <strong>Next</strong>;</p>
+<p>Click <strong>Next</strong> to skip Advanced Settings;</p>
+<p>Click <strong>Launch Analysis</strong> to launch your application</p>
+</li>
+<li>
+<p>In the navigation, click on the (Analyses) view. Your application will be listed as "Submitted" for a few minutes (usually just a few, but more depending on both the size of the application software and any imported datasets).</p>
+</li>
+<li>
+<p>When the Status of the launch is Running, click on the (link out icon); a new tab where your VICE application will run should open in your browser.</p>
+</li>
+</ol>
+<details class="tip">
+<summary>Launching VICE Apps</summary>
+<p>Even when the application has entered 'Running' status, you may still have to wait some additional time for input data to be transferred onto the resource with the new container. </p>
+</details>
+<h2 id="completing-our-analysis-in-r">Completing our analysis in R<a class="headerlink" href="#completing-our-analysis-in-r" title="Permanent link">&para;</a></h2>
+<p>Once you have your RStudio session, it will behave the same as a RStudio session running on your local Desktop. </p>
+<p>Some potential benefits of running RStudio in VICE include more processing power (especially if you choose additional resources at launch -- see the Advanced Settings).</p>
+<p>Since this session is running on CyVerse hardware, transferring large data will also happen at increased speed. To complete our analyses, we will install the <a href="https://cran.r-project.org/web/packages/ape/index.html" target="_blank"><code>ape</code> package</a> and compute a phylogenetic tree.</p>
+<details class="tip">
+<summary>Using RStudio</summary>
+<p>While you don't need to be an expert R user to complete this section, familiarity with R will help since we won't be going into specific detail about this example.</p>
+</details>
+<details class="tip">
+<summary>Locating your files in RStudio</summary>
+<p>The data we loaded at launch of the VICE application will be in the <code>/home/rstudio/work/data/input</code> directory.</p>
+</details>
+<p>From the R console, enter the following commands:</p>
+<div class="highlight"><span class="filename">script.r</span><pre><span></span><code># install and load the needed R library
+install.packages(&quot;ape&quot;)
+library(ape)
+
+#Read in the aligned DNA fasta file
+alignment &lt;- read.FASTA (&quot;~/work/data/input/muscle_output/fasta.aln&quot;, type=&quot;DNA&quot;)
+
+# Create a distance matrix for the sequences
+dist_mtrx &lt;- dist.dna(alignment)
+
+#Compute a neighbor-joining tree
+nj_tree &lt;- nj(dist_mtrx)
+
+# plot the tree
+plot.phylo(nj_tree)
+
+# save the tree to a file
+write.tree(nj_tree, file = &quot;~/work/data/output/tree.newick&quot;)
+
+#OR save to your CyVerse Data Store directly in the file browser
+write.tree(nj_tree, file = &quot;~/work/home/YOUR_CYVERSE_USERNAME/tutorial_folder/rocker_output/tree.newick&quot;)
+</code></pre></div>
+<p>You should have visualized the resulting tree and also created the file <code>tree.newick</code> in your work directory.</p>
+<h2 id="terminating-your-vice-session-and-saving-work-to-the-data-store">Terminating your VICE session and saving work to the Data Store<a class="headerlink" href="#terminating-your-vice-session-and-saving-work-to-the-data-store" title="Permanent link">&para;</a></h2>
+<p>Once you have completed your work, you can save your work to the Data Store and terminate your VICE application.</p>
+<details class="tip">
+<summary>Extending Analysis Time</summary>
+<p>VICE applications typically have a 48-hour run time. </p>
+<p>Unless you request an extension, your application will save data in the <code>~/work/data/outputs</code> folder to your <code>analyses/</code> folder when it terminates. </p>
+<p>It is recommended that you save your work to the Data Store before time expires.</p>
+</details>
+<ol>
+<li>
+<p>In the Analyses pane of the Discovery Environment, select your unning RStudio VICE application.</p>
+</li>
+<li>
+<p>Under <strong>More Actions</strong>, select <strong>Terminate</strong>; confirm Termination on the pop-up notice.</p>
+</li>
+<li>
+<p>When the VICE application has the status completed, click the folder icon to view the folder on your data store where results will be written. It may take time for all outputs to be saved depending on the size of the data generated.</p>
+</li>
+</ol>
+<details class="tip">
+<summary>Transfering your data</summary>
+<p>You don't have to terminate your analyses to save your work to the Data Store. </p>
+<p>From within the RStudio environment using the terminal, you can use iCommands to transfer data (See Data Store Guide on iCommands). </p>
+<p>RStudio does allow you to download files and plots directly back to your local computer. Use the "Export" features present in the file pane.</p>
+</details>
+<hr />
+<p><strong>Output/Results</strong></p>
+<table>
+<thead>
+<tr>
+<th>Output</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>tree.newick</code></td>
+<td>A Newick-formatted phylogenetic tree file which can visualized using your choice of tools.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="self-assessment-questions">Self Assessment Questions<a class="headerlink" href="#self-assessment-questions" title="Permanent link">&para;</a></h2>
+<details class="question">
+<summary>What kind of applications are supported in VICE?</summary>
+<p><strong>A</strong> Applications with their own graphical interface</p>
+<p><strong>B</strong> Open-source applications</p>
+<p><strong>C</strong>  Applications that have interactive visualizations</p>
+<p><strong>D</strong>  All of the above</p>
+<details class="answer">
+<summary>Answer</summary>
+<p>Correct answer is <strong>D</strong></p>
+</details>
+</details>
+<details class="question">
+<summary>Which of the following are restrictions on using VICE?</summary>
+<p><strong>A</strong>  You must request access on the CyVerse user portal</p>
+<p><strong>B</strong>  VICE applications have a 48-hour runtime limit</p>
+<p><strong>C</strong>  You must install VICE applications yourself</p>
+<p><strong>D</strong>  A and B</p>
+<p><strong>E</strong>  C only</p>
+<details class="answer">
+<summary>Answer</summary>
+<p>Correct answer is <strong>D</strong>, you must request separate access to use VICE. </p>
+<p>There is a default 48-hour run time but you can extend your time by requesting this in the Analysis view for the launched application.</p>
+</details>
+</details>
+<hr />
+<p><strong>Fix or improve this documentation</strong></p>
+<ul>
+<li>Search for an answer:
+     <a href="https://learning.cyverse.org" target="_blank">CyVerse Learning Center</a></li>
+<li>Ask us for help:
+    click the Intercom icon <img alt="Intercom" src="../assets/intercom.png" width="25" /> on the lower right-hand side of the page</li>
+<li>Report an issue or submit a change:
+    <a href="https://github.com/cyverse-learning-materials/" target="_blank">Github Repo Link</a></li>
+<li>Send feedback: <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#116;&#117;&#116;&#111;&#114;&#105;&#97;&#108;&#115;&#64;&#99;&#121;&#118;&#101;&#114;&#115;&#101;&#46;&#111;&#114;&#103;">&#116;&#117;&#116;&#111;&#114;&#105;&#97;&#108;&#115;&#64;&#99;&#121;&#118;&#101;&#114;&#115;&#101;&#46;&#111;&#114;&#103;</a></li>
+</ul>
+<hr />
+<p><a href="http://learning.cyverse.org/">Learning Center Home</a></p>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../step7/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Analysis with the Discovery Environment" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Analysis with the Discovery Environment
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../final_step/" class="md-footer__link md-footer__link--next" aria-label="Next: Conclusion and Advanced Applications" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Conclusion and Advanced Applications
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2022 CyVerse USA
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.expand", "navigation.tracking", "navigation.sections", "navigation.expand"], "search": "../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.6e54b5cd.min.js"></script>
+      
+        <script src="../javascripts/intercom-learning.js"></script>
+      
+    
+  </body>
+</html>
