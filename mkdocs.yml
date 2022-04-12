@@ -87,11 +87,9 @@ extra:
     - icon: fontawesome/brands/youtube
       link: https://www.youtube.com/c/CyverseOrgProject
 # setting up versioning with mike
+extra:
   version:
-    method: mike
-    default: usa
-plugins:
-  - mike
+    provider: mike
 #  analytics:
 #    provider: google
 #    property: 
