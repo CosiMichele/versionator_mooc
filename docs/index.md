@@ -11,8 +11,8 @@ This self-guided course will take you through the basics of using CyVerse UK.
 
 Who to contact if this guide needs fixing. You can also email <learning@cyverse.org>
 
-| Maintainer | Institution | Contact |
-|------------|-------------|---------|
+| Maintainer | Institution |
+|------------|-------------|
 | Rob Davey | Earlham Institute |
 | Alice Minotto | Earlham Institute |
 | Anthony Hall| Earlham Institute |
