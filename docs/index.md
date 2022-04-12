@@ -3,7 +3,7 @@
 !!! Warning
     **THIS IS A SAMPLE PAGE, NAMES AND CONTENT ARE SUBJECT TO CHANGE**
 
-This self-guided course will take you through the basics of using CyVerse UK.
+This self-guided course will take you through the basics of using CyVerse Austria.
 
 ------------------------------------------------------------------------
 
@@ -13,10 +13,11 @@ Who to contact if this guide needs fixing. You can also email <learning@cyverse.
 
 | Maintainer | Institution |
 |------------|-------------|
-| Rob Davey | Earlham Institute |
-| Alice Minotto | Earlham Institute |
-| Anthony Hall| Earlham Institute |
-
+| Stefanie Lindstaedt | Graz University of Technology	|
+| David Garcia de Marina Llorente | Graz University of Technology	|
+| Konrad Lang | Graz University of Technology	|
+| Manfred Stepponat | Graz University of Technology	|
+| Sarah Stryeck | Graz University of Technology	|
 ------------------------------------------------------------------------
 
 ## Table of Contents
